@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) throws Exception {
         
-        byte diaSemana = 0;
+        // byte diaSemana = 0;
 
         // switch (diaSemana) {
         //     case 1, 7 -> System.out.println("Fim de semana");
@@ -17,8 +17,14 @@ public class Main {
         //     System.out.println("Dia da semana: " + ++diaSemana);
         // } while (diaSemana < 20);
 
-        for(diaSemana = 7; diaSemana >= 1; diaSemana--) {
-            System.out.println("Dia da semana: " + diaSemana);
+        // for(diaSemana = 7; diaSemana >= 1; diaSemana--) {
+        //     System.out.println("Dia da semana: " + diaSemana);
+        // }
+
+        int numeroInicial = 1;
+
+        for(int i = numeroInicial; i <=100; i++) {
+            System.out.println("Número: " + i);
         }
     }
 }
