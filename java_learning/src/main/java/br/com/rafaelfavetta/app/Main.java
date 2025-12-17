@@ -1,6 +1,8 @@
+package br.com.rafaelfavetta.app;
+
 public class Main {
-    public static void main(String[] args) throws Exception {
-        
+    public static void main(String[] args) {
+
         // byte diaSemana = 0;
 
         // switch (diaSemana) {
@@ -23,7 +25,7 @@ public class Main {
 
         int numeroInicial = 1;
 
-        for(int i = numeroInicial; i <=100; i++) {
+        for (int i = numeroInicial; i <=40 ; i++) {
             System.out.println("Número: " + i);
         }
     }
