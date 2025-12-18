@@ -27,6 +27,8 @@ public class SwitchCase {
             case 7:
                 System.out.println("Sábado");
                 break;
+            default:
+                System.out.println("Dia não incluído na semana");
         }
     }
 }
