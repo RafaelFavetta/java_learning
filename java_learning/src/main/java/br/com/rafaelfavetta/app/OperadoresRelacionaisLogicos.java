@@ -3,6 +3,7 @@ package br.com.rafaelfavetta.app;
 public class OperadoresRelacionaisLogicos {
     public static void main(String[] args) {
 
+        //lógicos
         int idade = 1;
         boolean temCarteira = false;
 
@@ -13,5 +14,15 @@ public class OperadoresRelacionaisLogicos {
         } else {
             System.out.println("Você não pode dirigir porque é menor de idade.");
         }
+
+        //atribuição
+        int pontos = 10;
+
+        pontos += 5;
+        pontos -= 3;
+        pontos *= 2;
+        pontos /= 4;
+
+        System.out.println(pontos);
     }
 }
