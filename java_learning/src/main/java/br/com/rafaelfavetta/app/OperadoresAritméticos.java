@@ -1,6 +1,6 @@
 package br.com.rafaelfavetta.app;
 
-public class Operadores {
+public class OperadoresAritméticos {
     public static void main(String[] args) {
 
         int a = 10;
