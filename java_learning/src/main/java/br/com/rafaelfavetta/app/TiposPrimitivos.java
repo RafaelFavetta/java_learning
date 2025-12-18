@@ -9,7 +9,7 @@ public class TiposPrimitivos {
         boolean isEstudante = true;
         double media = 7.8;
 
-        System.out.println("Idade: " +idade + "\nAltura: " +altura + "\nInicial: " +inicial + "\nÉ estudante?: " +isEstudante);
-        System.out.println("Média: " +(int)media);
+        System.out.println("Idade: " + idade + "\nAltura: " + altura + "\nInicial: " + inicial + "\nÉ estudante?: " + isEstudante);
+        System.out.println("Média: " + (int) media);
     }
 }
