@@ -66,17 +66,17 @@ public class Arrays {
 //        System.out.printf("A soma foi: %.2f%n" , arrSoma);
 //        System.out.printf("A média foi:  %.2f%n" , arrMedia);
 
-        int[] arrInt = {1, -3, 5, 7, -8, -2, 0};
-
-        for (int i = 0; i < arrInt.length; i++){
-            if (arrInt[i] < 0){
-                arrInt[i] = 0;
-            }
-        }
-
-        for (int j : arrInt){
-            System.out.println(j);
-        }
+//        int[] arrInt = {1, -3, 5, 7, -8, -2, 0};
+//
+//        for (int i = 0; i < arrInt.length; i++){
+//            if (arrInt[i] < 0){
+//                arrInt[i] = 0;
+//            }
+//        }
+//
+//        for (int j : arrInt){
+//            System.out.println(j);
+//        }
 
 //        int arrMaior = arrInt[0];
 //        int arrMenor = arrInt[0];
@@ -92,5 +92,22 @@ public class Arrays {
 //
 //        System.out.println(arrMaior);
 //        System.out.println(arrMenor);
+
+        double[] arrNotas = {1.3, 5.7, 8.0, 9.9, 10.0, 4.9, 2.0, 5.7, 6.8, 7.2};
+        double mediaTurma = 0;
+        int acimaMedia = 0;
+        int abaixoMedia = 0;
+
+        for (double nota : arrNotas) {
+            if (nota < 7) {
+                abaixoMedia++;
+            } else {
+                acimaMedia++;
+            }
+        }
+
+        System.out.println("Acima da média: " + acimaMedia);
+        System.out.println("Abaixo da média: " + abaixoMedia);
+
     }
 }
