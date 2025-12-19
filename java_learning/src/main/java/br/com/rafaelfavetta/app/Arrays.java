@@ -19,21 +19,40 @@ public class Arrays {
 //        System.out.println("Esse é o primeiro elemento do array: " + arrBasico[0]);
 //        System.out.println("Esse é o último elemento do array: " + arrBasico[arrBasico.length - 1]);
 
-        int[] arrInt = {1, 2, 7, 8, 3, 6, 7, 2 , 657, 231, 254};
-        int numAlvo = 545;
-        boolean isInArray = false;
+//        int[] arrInt = {1, 2, 7, 8, 3, 6, 7, 2 , 657, 231, 254};
+//        int numAlvo = 545;
+//        boolean isInArray = false;
+//
+//        for (int arrNum : arrInt) {
+//            if (arrNum == numAlvo) {
+//                isInArray = true;
+//                break;
+//            }
+//        }
+//
+//        if (isInArray){
+//            System.out.println("Encontrado. O número alvo era " + numAlvo + ".");
+//        } else {
+//            System.out.println("O número " + numAlvo + " não foi encontrado.");
+//        }
 
-        for (int arrNum : arrInt) {
-            if (arrNum == numAlvo) {
-                isInArray = true;
-                break;
+        int[] arrInt = {1,2,3,4,5,6,7,8,9,10,11,12,13,75,35,22,111};
+
+        int numPares = 0;
+        int numImpares = 0;
+
+        for (int arrNum : arrInt){
+            if (arrNum % 2 == 0){
+                System.out.println(arrNum + " é par.");
+                numPares++;
+            } else {
+                System.out.println(arrNum + " é ímpar.");
+                numImpares++;
             }
         }
 
-        if (isInArray){
-            System.out.println("Encontrado. O número alvo era " + numAlvo + ".");
-        } else {
-            System.out.println("O número " + numAlvo + " não foi encontrado.");
-        }
+        System.out.println("Quantidade de números pares informados: " + numPares + ".");
+        System.out.println("Quantidade de números ímpares informados: " + numImpares + ".");
+
     }
 }
