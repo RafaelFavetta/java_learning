@@ -54,17 +54,23 @@ public class Arrays {
 //        System.out.println("Quantidade de números pares informados: " + numPares + ".");
 //        System.out.println("Quantidade de números ímpares informados: " + numImpares + ".");
 
-        double[] arrDouble = {2.3,424.4,243.4,21.3,87.11,8.1,45.1,1.9,3.0};
-        double arrSoma = 0;
+//        double[] arrDouble = {2.3,424.4,243.4,21.3,87.11,8.1,45.1,1.9,3.0};
+//        double arrSoma = 0;
+//
+//        for (double arrNum : arrDouble){
+//            arrSoma += arrNum;
+//        }
+//
+//        double arrMedia = (arrSoma / arrDouble.length);
+//
+//        System.out.printf("A soma foi: %.2f%n" , arrSoma);
+//        System.out.printf("A média foi:  %.2f%n" , arrMedia);
 
-        for (double arrNum : arrDouble){
-            arrSoma += arrNum;
+        int[] arrInt = {1, 3, 5, 7, 8, 2, 0};
+
+        for (int i = arrInt.length - 1; i >= 0; i--){
+            System.out.println(arrInt[i]);
         }
-
-        double arrMedia = (arrSoma / arrDouble.length);
-
-        System.out.printf("A soma foi: %.2f%n" , arrSoma);
-        System.out.printf("A média foi:  %.2f%n" , arrMedia);
 
     }
 }
