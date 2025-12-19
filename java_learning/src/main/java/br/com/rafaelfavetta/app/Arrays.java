@@ -9,8 +9,14 @@ public class Arrays {
             System.out.println(arrBasico[i]);
         }
 
-        System.out.println("Esse é o tamanho do array: " + arrBasico.length);
-        System.out.println("Esse é o primeiro elemento do array: " + arrBasico[0]);
-        System.out.println("Esse é o último elemento do array: " + arrBasico[arrBasico.length - 1]);
+        System.out.println("------------------------");
+
+        for (int number : arrBasico){
+            System.out.println(number);
+        }
+
+//        System.out.println("Esse é o tamanho do array: " + arrBasico.length);
+//        System.out.println("Esse é o primeiro elemento do array: " + arrBasico[0]);
+//        System.out.println("Esse é o último elemento do array: " + arrBasico[arrBasico.length - 1]);
     }
 }
