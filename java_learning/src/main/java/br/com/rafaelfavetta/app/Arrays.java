@@ -68,9 +68,19 @@ public class Arrays {
 
         int[] arrInt = {1, 3, 5, 7, 8, 2, 0};
 
-        for (int i = arrInt.length - 1; i >= 0; i--){
-            System.out.println(arrInt[i]);
+        int arrMaior = arrInt[0];
+        int arrMenor = arrInt[0];
+
+        for (int i : arrInt) {
+            if (i > arrMaior){
+                arrMaior = i;
+            }
+            if (i < arrMenor){
+                arrMenor = i;
+            }
         }
 
+        System.out.println(arrMaior);
+        System.out.println(arrMenor);
     }
 }
