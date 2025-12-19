@@ -36,23 +36,35 @@ public class Arrays {
 //            System.out.println("O número " + numAlvo + " não foi encontrado.");
 //        }
 
-        int[] arrInt = {1,2,3,4,5,6,7,8,9,10,11,12,13,75,35,22,111};
+//        int[] arrInt = {1,2,3,4,5,6,7,8,9,10,11,12,13,75,35,22,111};
 
-        int numPares = 0;
-        int numImpares = 0;
+//        int numPares = 0;
+//        int numImpares = 0;
+//
+//        for (int arrNum : arrInt){
+//            if (arrNum % 2 == 0){
+//                System.out.println(arrNum + " é par.");
+//                numPares++;
+//            } else {
+//                System.out.println(arrNum + " é ímpar.");
+//                numImpares++;
+//            }
+//        }
+//
+//        System.out.println("Quantidade de números pares informados: " + numPares + ".");
+//        System.out.println("Quantidade de números ímpares informados: " + numImpares + ".");
 
-        for (int arrNum : arrInt){
-            if (arrNum % 2 == 0){
-                System.out.println(arrNum + " é par.");
-                numPares++;
-            } else {
-                System.out.println(arrNum + " é ímpar.");
-                numImpares++;
-            }
+        double[] arrDouble = {2.3,424.4,243.4,21.3,87.11,8.1,45.1,1.9,3.0};
+        double arrSoma = 0;
+
+        for (double arrNum : arrDouble){
+            arrSoma += arrNum;
         }
 
-        System.out.println("Quantidade de números pares informados: " + numPares + ".");
-        System.out.println("Quantidade de números ímpares informados: " + numImpares + ".");
+        double arrMedia = (arrSoma / arrDouble.length);
+
+        System.out.printf("A soma foi: %.2f%n" , arrSoma);
+        System.out.printf("A média foi:  %.2f%n" , arrMedia);
 
     }
 }
