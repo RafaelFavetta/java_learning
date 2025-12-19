@@ -66,21 +66,31 @@ public class Arrays {
 //        System.out.printf("A soma foi: %.2f%n" , arrSoma);
 //        System.out.printf("A média foi:  %.2f%n" , arrMedia);
 
-        int[] arrInt = {1, 3, 5, 7, 8, 2, 0};
+        int[] arrInt = {1, -3, 5, 7, -8, -2, 0};
 
-        int arrMaior = arrInt[0];
-        int arrMenor = arrInt[0];
-
-        for (int i : arrInt) {
-            if (i > arrMaior){
-                arrMaior = i;
-            }
-            if (i < arrMenor){
-                arrMenor = i;
+        for (int i = 0; i < arrInt.length; i++){
+            if (arrInt[i] < 0){
+                arrInt[i] = 0;
             }
         }
 
-        System.out.println(arrMaior);
-        System.out.println(arrMenor);
+        for (int j : arrInt){
+            System.out.println(j);
+        }
+
+//        int arrMaior = arrInt[0];
+//        int arrMenor = arrInt[0];
+//
+//        for (int i : arrInt) {
+//            if (i > arrMaior){
+//                arrMaior = i;
+//            }
+//            if (i < arrMenor){
+//                arrMenor = i;
+//            }
+//        }
+//
+//        System.out.println(arrMaior);
+//        System.out.println(arrMenor);
     }
 }
