@@ -93,21 +93,74 @@ public class Arrays {
 //        System.out.println(arrMaior);
 //        System.out.println(arrMenor);
 
-        double[] arrNotas = {1.3, 5.7, 8.0, 9.9, 10.0, 4.9, 2.0, 5.7, 6.8, 7.2};
-        double mediaTurma = 0;
-        int acimaMedia = 0;
-        int abaixoMedia = 0;
+//        double[] arrNotas = {1.3, 5.7, 8.0, 9.9, 10.0, 4.9, 2.0, 5.7, 6.8, 7.2};
+//        double mediaTurma = 0;
+//        int acimaMedia = 0;
+//        int abaixoMedia = 0;
+//
+//        for (double nota : arrNotas) {
+//            if (nota < 7) {
+//                abaixoMedia++;
+//            } else {
+//                acimaMedia++;
+//            }
+//        }
+//
+//        System.out.println("Acima da média: " + acimaMedia);
+//        System.out.println("Abaixo da média: " + abaixoMedia);
 
-        for (double nota : arrNotas) {
-            if (nota < 7) {
-                abaixoMedia++;
-            } else {
-                acimaMedia++;
+//        int[] arrInt = {1, 2, 3, 4, 5};
+//        int qtdPares = 0;
+//        int qtdImpares = 0;
+//
+//        for (int arrNum : arrInt){
+//            if (arrNum % 2 == 0){
+//                System.out.println(arrNum + " é par");
+//                qtdPares++;
+//            } else {
+//                System.out.println(arrNum + " é ímpar");
+//                qtdImpares++;
+//            }
+//        }
+//
+//        System.out.println("\nPares: " + qtdPares);
+//        System.out.println("Ímpares: " + qtdImpares);
+
+
+//        double numsSoma = 0;
+//
+//        for (double i : arrNums){
+//            numsSoma += i;
+//        }
+//
+//        double numsMedia = numsSoma / arrNums.length;
+//
+//        System.out.println(numsSoma);
+//        System.out.println(numsMedia);
+
+
+        int[][] mapa = {
+                {5, 12, 7, 20},
+                {3, 9, 15, 2},
+                {18, 4, 6, 11}
+        };
+
+        int soma = 0;
+        int count = 0;
+
+        for (int[] linha : mapa){
+            for (int num : linha){
+                if (num % 2 == 1 && num > 10){
+                    soma += num;
+                    System.out.println(num);
+                    count++;
+                }
             }
-        }
 
-        System.out.println("Acima da média: " + acimaMedia);
-        System.out.println("Abaixo da média: " + abaixoMedia);
+        }
+        System.out.println("\n" + soma);
+        System.out.println("\n" + count);
+
 
     }
 }
