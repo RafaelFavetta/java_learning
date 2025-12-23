@@ -18,6 +18,8 @@ public class CarroTest {
         bugatti.nome = "Bugatti Veyron";
 
         System.out.println(bugatti.nome + " " + bugatti.modelo + " " + bugatti.ano);
+
+        bugatti.acionarAirbag();
     }
 
 
