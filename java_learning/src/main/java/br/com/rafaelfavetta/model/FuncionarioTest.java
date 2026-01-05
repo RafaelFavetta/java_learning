@@ -8,7 +8,7 @@ public class FuncionarioTest {
         Funcionario funcionario = new Funcionario();
         funcionario.nome = "Jair";
         funcionario.idade = 19;
-        funcionario.salarios = new double[]{1200, 999.9, 200.44};
+//        funcionario.salarios = new double[]{1200, 999.9, 200.44};
 
         funcionario.imprimeDados();
     }
