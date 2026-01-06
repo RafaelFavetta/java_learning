@@ -5,22 +5,43 @@ import br.com.rafaelfavetta.controleseminario.Local;
 import br.com.rafaelfavetta.controleseminario.Professor;
 import br.com.rafaelfavetta.controleseminario.Seminario;
 
+import java.util.Scanner;
+
 public class TestAssociacaoSeminario {
     public static void main(String[] args) {
 
-        Local localSeminario2026 = new Local("Rua Professor Vicente Casale Padovani");
+        Scanner scanner = new Scanner(System.in);
 
-        Aluno alunoSeminario = new Aluno("Rafael", 18);
+        System.out.println("Informe abaixo seu endereço.");
+        String enderecoSeminario = scanner.nextLine();
+        Local localSeminario2026 = new Local(enderecoSeminario);
 
-        Aluno[] alunosSeminarioRafael = {};
+        System.out.println("Informe abaixo o nome do aluno.");
+        String nomeAlunoSeminario = scanner.nextLine();
 
-        Professor professorSeminario = new Professor("Joca", "Sociologia");
+        System.out.println("Informe abaixo a idade do aluno.");
+        int idadeAlunoSeminario = scanner.nextInt();
+        scanner.nextLine(); //limpar o buffer
 
-        Seminario seminarioRafael = new Seminario("Judaísmo", alunosSeminarioRafael, localSeminario2026);
+        Aluno alunoSeminario = new Aluno(nomeAlunoSeminario, idadeAlunoSeminario);
+        Aluno[] alunosSeminario = {alunoSeminario};
 
-        Seminario[] seminariosDisponiveis = {seminarioRafael};
+        System.out.println("Informe abaixo o título do seminário.");
+        String tituloSeminario = scanner.nextLine();
+        Seminario seminario = new Seminario(tituloSeminario, alunosSeminario, localSeminario2026);
+        Seminario[] seminarios2026 = {seminario};
 
-        professorSeminario.setSeminariosMinistrados(seminariosDisponiveis);
+        System.out.println("Informe abaixo o nome do professor ministrador.");
+        String nomeProfessorMinistrador = scanner.nextLine();
+
+        System.out.println("Informe abaixo a especialidade do professor ministrador.");
+        String especiliadadeProfessorMinistrador = scanner.nextLine();
+
+        Professor professorSeminario = new Professor(nomeProfessorMinistrador, especiliadadeProfessorMinistrador, seminarios2026);
+
+        System.out.println();
         professorSeminario.imprime();
+
+        scanner.close();
     }
 }

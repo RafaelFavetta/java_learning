@@ -23,7 +23,11 @@ public class Professor {
 
     public void imprime() {
         System.out.println("*******");
-        System.out.println("Professor: " + this.nomeProfessorSeminario);
+        System.out.print("Professor: " + this.nomeProfessorSeminario);
+        if (this.especialidadeProfessorSeminario == null){
+            return;
+        }
+        System.out.println(". Cuja especialidade é " + especialidadeProfessorSeminario);
         if (this.seminariosMinistrados == null) {
             return;
         }
@@ -34,7 +38,7 @@ public class Professor {
                 continue;
             }
             for (Aluno alunoSeminario : seminarioMinistrado.getAlunosSeminario()) {
-                System.out.println("Aluno " + alunoSeminario.getNomeAlunoSeminario() + " de " + alunoSeminario.getIdadeAlunoSeminario() + " anos de idade");
+                System.out.println("Aluno: " + alunoSeminario.getNomeAlunoSeminario() + ". De " + alunoSeminario.getIdadeAlunoSeminario() + " anos de idade");
             }
         }
     }
