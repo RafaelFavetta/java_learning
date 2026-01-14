@@ -20,6 +20,6 @@ public class Manager extends Staff {
 
     @Override
     public boolean authenticate(String password) {
-        return this.password.equals(password);
+        return this.password.equals(password) && password.length() > 4;
     }
 }

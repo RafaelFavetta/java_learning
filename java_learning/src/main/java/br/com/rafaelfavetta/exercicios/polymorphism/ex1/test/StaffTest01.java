@@ -27,11 +27,11 @@ public class StaffTest01 {
             System.out.println();
         }
 
-        Authenticable auth1 = new Manager("Rafael", 5000, "12345");
+        Authenticable auth1 = new Manager("Rafael", 5000, "123");
         Authenticable auth2 = new Developer("Maria", 2000, "54321");
         Authenticable auth3 = new Cliente("Ney", 1000000000, "neymar");
 
         System.out.println(auth1.authenticate("2323"));
-        System.out.println(auth1.authenticate("12345"));
+        System.out.println(auth1.authenticate("123"));
     }
 }
