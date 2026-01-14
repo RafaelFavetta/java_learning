@@ -1,6 +1,8 @@
 package br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain;
 
-public abstract class Staff {
+import br.com.rafaelfavetta.exercicios.polymorphism.ex1.auth.Authenticable;
+
+public abstract class Staff implements Authenticable {
 
     private String name;
     protected double salary;

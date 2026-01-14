@@ -1,5 +1,7 @@
 package br.com.rafaelfavetta.exercicios.polymorphism.ex1.test;
 
+import br.com.rafaelfavetta.exercicios.polymorphism.ex1.auth.Authenticable;
+import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Cliente;
 import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Developer;
 import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Manager;
 import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Staff;
@@ -24,5 +26,12 @@ public class StaffTest01 {
             System.out.println(s.calculateTotalSalary());
             System.out.println();
         }
+
+        Authenticable auth1 = new Manager("Rafael", 5000, "12345");
+        Authenticable auth2 = new Developer("Maria", 2000, "54321");
+        Authenticable auth3 = new Cliente("Ney", 1000000000, "neymar");
+
+        System.out.println(auth1.authenticate("2323"));
+        System.out.println(auth1.authenticate("12345"));
     }
 }
