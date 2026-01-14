@@ -1,7 +1,7 @@
-package br.com.rafaelfavetta.exercicios.association.test;
+package br.com.rafaelfavetta.exercicios.association.ex1.test;
 
-import br.com.rafaelfavetta.exercicios.association.domain.Endereco;
-import br.com.rafaelfavetta.exercicios.association.domain.Pessoa;
+import br.com.rafaelfavetta.exercicios.association.ex1.domain.Endereco;
+import br.com.rafaelfavetta.exercicios.association.ex1.domain.Pessoa;
 
 public class EnderecoTest01 {
     public static void main(String[] args) {

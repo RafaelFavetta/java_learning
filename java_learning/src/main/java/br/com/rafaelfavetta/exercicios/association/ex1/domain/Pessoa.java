@@ -1,4 +1,4 @@
-package br.com.rafaelfavetta.exercicios.association.domain;
+package br.com.rafaelfavetta.exercicios.association.ex1.domain;
 
 public class Pessoa {
 
