@@ -1,4 +1,4 @@
-package br.com.rafaelfavetta.exercicios.polimorphism.ex1.domain;
+package br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain;
 
 public abstract class Staff {
 

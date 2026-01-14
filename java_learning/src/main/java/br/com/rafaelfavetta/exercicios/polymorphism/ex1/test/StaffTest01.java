@@ -1,8 +1,8 @@
-package br.com.rafaelfavetta.exercicios.polimorphism.ex1.test;
+package br.com.rafaelfavetta.exercicios.polymorphism.ex1.test;
 
-import br.com.rafaelfavetta.exercicios.polimorphism.ex1.domain.Developer;
-import br.com.rafaelfavetta.exercicios.polimorphism.ex1.domain.Manager;
-import br.com.rafaelfavetta.exercicios.polimorphism.ex1.domain.Staff;
+import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Developer;
+import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Manager;
+import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Staff;
 
 public class StaffTest01 {
     public static void main(String[] args) {
