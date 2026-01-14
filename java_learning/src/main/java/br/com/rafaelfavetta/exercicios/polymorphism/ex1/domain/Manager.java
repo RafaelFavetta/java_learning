@@ -22,4 +22,8 @@ public class Manager extends Staff {
     public boolean authenticate(String password) {
         return this.password.equals(password) && password.length() > 4;
     }
+
+    public boolean approveBudget(){
+        return true;
+    }
 }

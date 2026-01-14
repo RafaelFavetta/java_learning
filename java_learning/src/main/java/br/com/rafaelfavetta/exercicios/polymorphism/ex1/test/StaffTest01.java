@@ -24,6 +24,9 @@ public class StaffTest01 {
             System.out.println(s.getName());
             System.out.println(s.calculateBonus());
             System.out.println(s.calculateTotalSalary());
+            if (s instanceof Manager manager) {
+                System.out.println(manager.approveBudget());
+            }
             System.out.println();
         }
 
