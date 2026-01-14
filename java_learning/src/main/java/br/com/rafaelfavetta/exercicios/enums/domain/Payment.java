@@ -12,22 +12,10 @@ public class Payment {
 
     public void processPayment() {
         switch (paymentType) {
-            case PIX -> {
-                System.out.println("Pagamento PIX utilizado");
-                break;
-            }
-            case BOLETO -> {
-                System.out.println("Pagamento em boleto utilizado");
-                break;
-            }
-            case DEBITO -> {
-                System.out.println("Pagamento em débito utilizado");
-                break;
-            }
-            case CREDITO -> {
-                System.out.println("Pagamento em crédito utilizado");
-                break;
-            }
+            case PIX -> System.out.println("Pagamento PIX utilizado");
+            case BOLETO -> System.out.println("Pagamento em boleto utilizado");
+            case DEBITO -> System.out.println("Pagamento em débito utilizado");
+            case CREDITO -> System.out.println("Pagamento em crédito utilizado");
         }
     }
 }
