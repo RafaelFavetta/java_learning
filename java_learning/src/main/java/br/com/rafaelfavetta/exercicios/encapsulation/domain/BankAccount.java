@@ -1,4 +1,4 @@
-package br.com.rafaelfavetta.exercicios.domain;
+package br.com.rafaelfavetta.exercicios.encapsulation.domain;
 
 public class BankAccount {
 
