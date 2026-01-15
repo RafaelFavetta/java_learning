@@ -11,4 +11,10 @@ public class Shooter extends Player {
     public double calculateImpact() {
         return ovr * 1.30;
     }
+
+    public void trainThreeBall(){
+        System.out.println("I've trained my three ball!!");
+        System.out.println("Said " + name);
+        System.out.println();
+    }
 }

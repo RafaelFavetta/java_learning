@@ -33,5 +33,13 @@ public class ImpactTest {
                 .forEach(player ->
                         System.out.println(player.getName() + " - Impacto: " + player.calculateImpact())
                 );
+
+        System.out.println();
+
+        for (Player p : players) {
+            if (p instanceof Shooter shooter) {
+                shooter.trainThreeBall();
+            }
+        }
     }
 }
