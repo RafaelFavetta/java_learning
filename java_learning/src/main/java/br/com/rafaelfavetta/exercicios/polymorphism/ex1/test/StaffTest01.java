@@ -1,7 +1,5 @@
 package br.com.rafaelfavetta.exercicios.polymorphism.ex1.test;
 
-import br.com.rafaelfavetta.exercicios.polymorphism.ex1.auth.Authenticable;
-import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Cliente;
 import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Developer;
 import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Manager;
 import br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain.Staff;
