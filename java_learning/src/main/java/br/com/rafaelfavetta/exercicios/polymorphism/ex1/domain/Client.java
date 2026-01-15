@@ -1,9 +1,11 @@
 package br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain;
 
 import br.com.rafaelfavetta.exercicios.polymorphism.ex1.auth.Authenticable;
+import br.com.rafaelfavetta.exercicios.polymorphism.ex1.auth.Role;
 
 public class Client implements Authenticable {
 
+    private Role role;
     private String name;
     private int idade;
     private String password;
@@ -12,6 +14,7 @@ public class Client implements Authenticable {
         this.name = name;
         this.idade = idade;
         this.password = password;
+        this.role = Role.CLIENT;
     }
 
     @Override

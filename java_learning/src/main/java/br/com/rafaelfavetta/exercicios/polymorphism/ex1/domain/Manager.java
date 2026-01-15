@@ -1,16 +1,15 @@
 package br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain;
 
+import br.com.rafaelfavetta.exercicios.polymorphism.ex1.auth.Role;
+
 public class Manager extends Staff {
 
     private String password;
 
-    public Manager(String name, double salary) {
-        super(name, salary);
-    }
-
     public Manager(String name, double salary, String password) {
         super(name, salary);
         this.password = password;
+        this.role = Role.MANAGER;
     }
 
     @Override

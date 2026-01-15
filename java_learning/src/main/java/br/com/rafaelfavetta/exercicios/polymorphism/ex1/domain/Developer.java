@@ -1,5 +1,7 @@
 package br.com.rafaelfavetta.exercicios.polymorphism.ex1.domain;
 
+import br.com.rafaelfavetta.exercicios.polymorphism.ex1.auth.Role;
+
 public class Developer extends Staff {
 
     private String password;
@@ -11,6 +13,7 @@ public class Developer extends Staff {
     public Developer(String name, double salary, String password) {
         super(name, salary);
         this.password = password;
+        this.role = Role.DEVELOPER;
     }
 
     @Override
