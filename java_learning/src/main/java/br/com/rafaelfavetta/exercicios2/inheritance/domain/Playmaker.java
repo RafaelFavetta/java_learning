@@ -10,4 +10,10 @@ public class Playmaker extends Player {
     public double calculateImpact() {
         return ovr * 1.25;
     }
+
+    public void callPlays(){
+        System.out.println("Let's run \"floppy\", guys!!");
+        System.out.println("Said " + name);
+        System.out.println();
+    }
 }

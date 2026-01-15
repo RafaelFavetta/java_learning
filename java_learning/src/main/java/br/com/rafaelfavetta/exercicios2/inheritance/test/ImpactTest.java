@@ -41,5 +41,11 @@ public class ImpactTest {
                 shooter.trainThreeBall();
             }
         }
+
+        for (Player p : players) {
+            if (p instanceof Playmaker playmaker) {
+                playmaker.callPlays();
+            }
+        }
     }
 }
