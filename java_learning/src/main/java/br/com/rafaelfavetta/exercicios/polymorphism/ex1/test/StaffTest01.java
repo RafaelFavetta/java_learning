@@ -24,17 +24,20 @@ public class StaffTest01 {
             System.out.println(s.getName());
             System.out.println(s.calculateBonus());
             System.out.println(s.calculateTotalSalary());
-            if (s instanceof Manager manager) {
-                System.out.println(manager.approveBudget());
-            }
+            System.out.println(s.canApproveBudget());
+
+//            if (s instanceof Manager manager) {
+//                System.out.println(manager.approveBudget());
+//            }
+
             System.out.println();
         }
 
-        Authenticable auth1 = new Manager("Rafael", 5000, "123");
-        Authenticable auth2 = new Developer("Maria", 2000, "54321");
-        Authenticable auth3 = new Cliente("Ney", 1000000000, "neymar");
-
-        System.out.println(auth1.authenticate("2323"));
-        System.out.println(auth1.authenticate("123"));
+//        Authenticable auth1 = new Manager("Rafael", 5000, "123");
+//        Authenticable auth2 = new Developer("Maria", 2000, "54321");
+//        Authenticable auth3 = new Cliente("Ney", 1000000000, "neymar");
+//
+//        System.out.println(auth1.authenticate("2323"));
+//        System.out.println(auth1.authenticate("123"));
     }
 }

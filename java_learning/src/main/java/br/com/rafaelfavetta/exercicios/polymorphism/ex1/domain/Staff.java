@@ -18,6 +18,8 @@ public abstract class Staff implements Authenticable {
         return salary + calculateBonus();
     }
 
+    public abstract boolean canApproveBudget();
+
     public String getName() {
         return name;
     }

@@ -26,4 +26,9 @@ public class Manager extends Staff {
     public boolean approveBudget(){
         return getSalary() >= 5000;
     }
+
+    @Override
+    public boolean canApproveBudget() {
+        return true;
+    }
 }

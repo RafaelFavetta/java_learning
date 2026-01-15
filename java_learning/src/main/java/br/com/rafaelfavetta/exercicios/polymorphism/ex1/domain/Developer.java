@@ -22,4 +22,9 @@ public class Developer extends Staff {
     public boolean authenticate(String password) {
         return this.password.equals(password);
     }
+
+    @Override
+    public boolean canApproveBudget() {
+        return false;
+    }
 }
