@@ -14,7 +14,7 @@ public class StaffTest01 {
 
         List<Staff> staffs = new ArrayList<>();
 
-        staffs.add(new Manager("JoJo", 6000));
+        staffs.add(new Manager("JoJo", 4999.99));
         staffs.add(new Manager("Quark", 4000));
         staffs.add(new Developer("Earl", 499.90));
         staffs.add(new Developer("Ragnar", 899));
