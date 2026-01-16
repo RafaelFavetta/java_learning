@@ -8,6 +8,11 @@ public class Mage extends Character {
     }
 
     @Override
+    public void attack() {
+        System.out.println("Magic spell thrown!!!");
+    }
+
+    @Override
     public double calculateDamage() {
         return level * 1.25;
     }

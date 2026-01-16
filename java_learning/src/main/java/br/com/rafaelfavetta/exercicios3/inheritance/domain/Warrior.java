@@ -7,6 +7,11 @@ public class Warrior extends Character {
     }
 
     @Override
+    public void attack() {
+        System.out.println("Sword fighting!!!");
+    }
+
+    @Override
     public double calculateDamage() {
         return level * 1.30;
     }

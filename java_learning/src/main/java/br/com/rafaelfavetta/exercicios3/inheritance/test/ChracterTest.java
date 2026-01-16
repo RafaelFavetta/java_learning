@@ -23,15 +23,24 @@ public class ChracterTest {
         System.out.println(mage1.calculateDamage());
         System.out.println(mage2.calculateDamage());
         System.out.println(mage3.calculateDamage());
+        mage1.attack();
+        mage2.attack();
+        mage3.attack();
         System.out.println();
 
         System.out.println(warrior1.calculateDamage());
         System.out.println(warrior2.calculateDamage());
         System.out.println(warrior3.calculateDamage());
+        warrior1.attack();
+        warrior2.attack();
+        warrior3.attack();
         System.out.println();
 
         System.out.println(archer1.calculateDamage());
         System.out.println(archer2.calculateDamage());
         System.out.println(archer3.calculateDamage());
+        archer1.attack();
+        archer2.attack();
+        archer3.attack();
     }
 }

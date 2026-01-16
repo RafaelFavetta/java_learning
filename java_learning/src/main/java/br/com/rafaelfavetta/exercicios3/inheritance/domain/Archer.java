@@ -7,6 +7,11 @@ public class Archer extends Character {
     }
 
     @Override
+    public void attack() {
+        System.out.println("Arrow shot!!!");
+    }
+
+    @Override
     public double calculateDamage() {
         return level * 1.20;
     }

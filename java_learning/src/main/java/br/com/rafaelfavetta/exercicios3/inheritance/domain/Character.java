@@ -12,6 +12,8 @@ public abstract class Character {
 
     public abstract double calculateDamage();
 
+    public abstract void attack();
+
     public int getLevel() {
         return level;
     }
