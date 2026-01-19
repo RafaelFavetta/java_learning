@@ -3,25 +3,44 @@ package br.com.rafaelfavetta.exercicios3.enums.test;
 import br.com.rafaelfavetta.exercicios3.enums.domain.Tyres;
 
 public class RaceTest {
+
     public static void main(String[] args) {
 
         Tyres tyre = Tyres.SOFT;
-        int totalLaps = 40;
 
-        System.out.println("🏁 Corrida iniciada com pneu " + tyre);
-        System.out.println("----------------------------------");
+        int totalLaps = 76;
+        int raceLap = 1;
+        int tyreLap = 1;
 
-        for (int lap = 1; lap <= totalLaps; lap++) {
-            System.out.println("Lap " + lap);
+        System.out.println("🏁 Largada com pneu " + tyre);
 
-            if (tyre.isStillCompetitive(lap)) {
-                System.out.println("✅ Pneu ainda competitivo");
+        while (raceLap <= totalLaps) {
+
+            System.out.println(
+                    "Lap " + raceLap +
+                            " | Pneu: " + tyre +
+                            " | Voltas no pneu: " + tyreLap
+            );
+
+            if (!tyre.isStillCompetitive(tyreLap)) {
+                System.out.println("🔧 BOX! Trocando pneus...");
+                tyre = changeTyre(tyre);
+                tyreLap = 1;
             } else {
-                System.out.println("❌ Pneu morreu! BOX! 🧯");
-                break;
+                tyreLap++;
             }
+
+            raceLap++;
         }
-        System.out.println("----------------------------------");
-        System.out.println("🏁 Fim da simulação");
+
+        System.out.println("🏁 Corrida finalizada");
+    }
+
+    private static Tyres changeTyre(Tyres currentTyre) {
+        return switch (currentTyre) {
+            case SOFT -> Tyres.MEDIUM;
+            case MEDIUM -> Tyres.HARD;
+            case HARD -> Tyres.SOFT;
+        };
     }
 }
