@@ -2,9 +2,9 @@ package br.com.rafaelfavetta.exercicios3.enums.domain;
 
 public enum Tyres {
 
-    SOFT(1, 14),
-    MEDIUM(1, 20),
-    HARD(1, 25);
+    SOFT(0.8, 12),
+    MEDIUM(0.7, 14),
+    HARD(0.5, 15);
 
     final double wearSpeed;
     final double lackOfCompetetitiveness;
