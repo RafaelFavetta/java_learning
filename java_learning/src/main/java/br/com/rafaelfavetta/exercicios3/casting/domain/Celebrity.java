@@ -8,6 +8,8 @@ public abstract class Celebrity {
         this.yearsOfCareer = yearsOfCareer;
     }
 
+    public abstract void perform();
+
     public int getYearsOfCareer() {
         return yearsOfCareer;
     }

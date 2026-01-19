@@ -26,13 +26,7 @@ public class CelebrityTest {
 
         for (Celebrity c : celebrities) {
             System.out.println(c.getYearsOfCareer());
-
-            if (c instanceof Actor) {
-                ((Actor) c).act();
-            }
-            if (c instanceof Singer) {
-                ((Singer) c).sing();
-            }
+            c.perform();
         }
     }
 }

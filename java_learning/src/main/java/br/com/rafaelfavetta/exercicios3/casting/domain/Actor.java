@@ -6,7 +6,8 @@ public class Actor extends Celebrity {
         super(yearsOfCareer);
     }
 
-    public void act() {
+    @Override
+    public void perform() {
         System.out.println("Acting...");
     }
 }
